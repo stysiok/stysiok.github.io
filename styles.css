@@ -1,0 +1,201 @@
+html {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+.nav-item {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.n-right {
+    float: right;
+}
+
+.circular--landscape {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 40px auto;
+}
+
+.circular--landscape img {
+    width: 100%;
+    height: auto;
+    margin-top: -50px;
+}
+
+#avatar {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+#summary {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-main-split {
+    grid-template-columns: 40px auto 20px auto 40px;
+    grid-template-rows: auto;
+}
+
+.grid-item-2 {
+    grid-column-start: 2;
+}
+
+.grid-item-4 {
+    grid-column-start: 4;
+}
+
+section.grid-item-2 h3,
+section.grid-item-4 h3 {
+    padding-bottom: 5px;
+    border-bottom: black 1px solid;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+section.grid-item-2 section,
+section.grid-item-4 section {
+    margin-bottom: 50px;
+}
+
+.grid-section-info {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 5px 50%;
+}
+
+div.grid-section-info * {
+    margin: 0;
+}
+
+div.grid-section-info h5 {
+    font-weight: normal;
+}
+
+div.grid-section-info p {
+    text-align: right;
+    font-size: 0.83em;
+}
+
+.description {
+    text-align: left;
+}
+
+footer section div {
+    margin: auto;
+}
+
+footer section div a img {
+    width: 200px;
+    height: 200px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 699px) {
+    .grid-main-split {
+        grid-template-columns: 40px auto 40px;
+    }
+
+    .grid-item-2,
+    .grid-item-4 {
+        grid-column-start: 2;
+    }
+}
+
+@media only screen and (max-width: 674px) {
+    .n-right {
+        float: initial;
+    }
+
+    .n-left {
+        display: none;
+    }
+}

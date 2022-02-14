@@ -1,0 +1,287 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Grzegorz Stysiak - Full Stack Developer</title>
+  <meta name="description" content="Grzegorz Styisak's CV like website">
+  <meta name="author" content="https://github.com/stysiok">
+
+  <meta property="og:title" content="Grzegorz Stysiak - Full Stack Developer">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="Grzegorz Styisak's CV like website">
+  <!-- <meta property="og:image" content="image.png"> -->
+
+  <!-- <link rel="icon" href="/favicon.ico"> -->
+  <!-- <link rel="icon" href="/favicon.svg" type="image/svg+xml"> -->
+  <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+
+  <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav>
+      <!-- Left side -->
+      <a class="nav-item n-left nav__aboutme" href="#aboutme">O mnie</a>
+      <a class="nav-item n-left nav__experience" href="#experience">Doświadczenie</a>
+      <a class="nav-item n-left nav__education" href="#education">Edukacja</a>
+      <a class="nav-item n-left nav__projects" href="#projects">Projekty</a>
+      <a class="nav-item n-left nav__other" href="#other">Inne</a>
+      <a class="nav-item n-left nav__contact" href="#contact">Kontakt</a>
+      <!-- Right side -->
+      <span class="nav-item n-right" onclick="changeLanguage('en')">EN</span>
+      <a class="nav-item n-right">/</a>
+      <span class="nav-item n-right" onclick="changeLanguage('pl')">PL</span>
+      <!-- <div style="float: right;">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+
+      </div> -->
+    </nav>
+  </header>
+
+
+  <h1>Grzegorz Stysiak</h1>
+  <h2>Fullstack software developer</h2>
+  <div class="  circular--landscape">
+    <img src="./content/grzegorz.jpg" alt="Grzegorz photo">
+  </div>
+  <p id="summary" class="summary">Master's degree computer science graduate with over four years of commercial experience as a full
+    stack software developer. Taking part in whole process of creating software for a client, starting from drafting an
+    architectural concept, estimating, coding, testing to go-live itself. Cat lover, e-sport enthusiast and specialty
+    coffee taster after hours.</p>
+
+  <!-- main content -->
+  <section class="grid grid-main-split">
+    <!-- left side -->
+    <section class="grid-item-2" id="experience">
+      <h3 id="aboutme" class="title__experience">Doświadczenie:</h3>
+      <section>
+        <div class="grid grid-section-info">
+          <h4>Hoppinger</h3>
+            <p class="location__Rotterdam">Rotterdam, Holandia</p>
+        </div>
+        <div class="grid grid-section-info">
+          <h5>Software Developer</h5>
+          <p>2019.11 - <span class="currently"></span></p>
+        </div>
+        <section>
+          <p class="description Hoppinger__description">Helping different sized clients to translate their business needs into software using
+            various of technologies. Working in a scrum team to deliver diverse projects from small sized web
+            applications, to advanced IT systems. </p>
+          <p class="Hoppinger__techstack">Tech-stack includes but not limited to: C# (.NET Core, .NET), ReactJS
+            (JavaScript, TypeScript), PostgreSQL, Python, ELK (ElasticSearch, Logstash, Kibana), Kubernetes, Docker,
+            GitLab, GitHub, ArgoCD, Azure, AWS, Terraform</p>
+        </section>
+      </section>
+
+      <section>
+        <div class="grid grid-section-info">
+          <h4>Atos GDC</h3>
+            <p class="location__Opole">Opole, Polska</p>
+        </div>
+        <div class="grid grid-section-info">
+          <h5>Application Developer</h5>
+          <p>2017.03 - 2019.10</p>
+        </div>
+        <section>
+          <p class="description Atos__description">While working in Atos I was a member of two different scrum based teams in which I
+            actively participated in building, testing, enhancing and documenting new and existing functionalities in a
+            web application and IT system.</p>
+          <p class="Atos__techstack">Tech-stack includes but not limited to: C# (.NET Core, .NET Framework),
+            Angular ( Angular 7, TypeScript ), Node.JS, SQL Server, Git, TFS</p>
+        </section>
+      </section>
+
+    </section>
+
+    <section class="grid-item-4" id="education">
+      <h3 class="title__education">Edukacja:</h3>
+      <section>
+        <div class="grid grid-section-info">
+          <h4 class="Opole__UniversityOfTechnology">Politechnika Opolska</h3>
+            <p class="location__Opole">Opole, Polska</p>
+        </div>
+        <div class="grid grid-section-info">
+          <h5 class="masters_studies_IT">studia magisterskie - Informatyka</h5>
+          <p>2018.04 - 2019.06</p>
+        </div>
+        <section>
+          <p class="description Opole_masters__description">Defended master thesis in June 2019. Master thesis title: "Data migration technologies
+            used for the designing and implementation of new advanced web services"</p>
+        </section>
+      </section>
+      <section>
+        <div class="grid grid-section-info">
+          <h4 class="Opole__UniversityOfTechnology">Politechnika Opolska</h3>
+            <p class="location__Opole">Opole, Polska</p>
+        </div>
+        <div class="grid grid-section-info">
+          <h5 class="engineering_studies_IT">studia inżynierskie - Informatyka</h5>
+          <p>2014.10 - 2018.02</p>
+        </div>
+        <section>
+          <p class="description Opole_engineering__description">Defended engineering thesis in February 2018. Engineering thesis title: "Mobile
+            Pendrive - document archiving system based on cloud storages"</p>
+        </section>
+      </section>
+    </section>
+
+    <!-- right side -->
+    <section class="grid-item-2" id="education">
+      <h3 class="title__projects">Projekty:</h3>
+      <section>
+        <div class="grid grid-section-info">
+          <h4>Cthulhu</h3>
+            <p class="location__Rotterdam">Rotterdam, Niderlandy</p>
+        </div>
+        <div class="grid grid-section-info">
+          <h5 class="own__project">Własny projekt</h5>
+          <p>2021.03 - <span class="currently"></span></p>
+        </div>
+        <section>
+          <p class="description Cthulhu__description">Defended master thesis in June 2019. Master thesis title: "Data migration technologies
+            used for the designing and implementation of new advanced web services"</p>
+        </section>
+      </section>
+      <section>
+        <div class="grid grid-section-info">
+          <h4>Next Level BJJ</h3>
+            <p class="location__Opole">Opole, Polska</p>
+        </div>
+        <div class="grid grid-section-info">
+          <h5 class="own__project">Własny projekt</h5>
+          <p>2018.06 - 2019.11</p>
+        </div>
+        <section>
+          <p class="description NextLevelBJJ__description">Defended master thesis in June 2019. Master thesis title: "Data migration technologies
+            used for the designing and implementation of new advanced web services"</p>
+        </section>
+      </section>
+      <section>
+        <div class="grid grid-section-info">
+          <h4>Time Spend Tracker</h3>
+            <p class="location__Opole">Opole, Polska</p>
+        </div>
+        <div class="grid grid-section-info">
+          <h5 class="own__project">Własny projekt</h5>
+          <p>2018.01 - 2018.03</p>
+        </div>
+        <section>
+          <p class="description TimeSpendTracker__description">Defended master thesis in June 2019. Master thesis title: "Data migration technologies
+            used for the designing and implementation of new advanced web services"</p>
+        </section>
+      </section>
+      <section>
+        <div class="grid grid-section-info">
+          <h4>Google Disk App</h3>
+            <p class="location__Opole">Opole, Polska</p>
+        </div>
+        <div class="grid grid-section-info">
+          <h5 class="own__project">Własny projekt</h5>
+          <p>2016.07 - 2016.10</p>
+        </div>
+        <section>
+          <p class="description GoogleDiskApp__description">Defended master thesis in June 2019. Master thesis title: "Data migration technologies
+            used for the designing and implementation of new advanced web services"</p>
+        </section>
+      </section>
+    </section>
+
+    <section class="grid-item-4" id="education">
+      <h3 class="title__other">Inne:</h3>
+      <section>
+        <div class="grid grid-section-info">
+          <h4 class="MicrosoftExam__title">Microsoft egzamin 483</h3>
+            <p class="location__Rotterdam">Rotterdam, Niderlandy</p>
+        </div>
+        <div class="grid grid-section-info">
+          <h5 class="certificate">Certyfikat</h5>
+          <p>2021.01</p>
+        </div>
+        <section>
+          <p class="description MicrosoftExam__description">Defended engineering thesis in February 2018. Engineering thesis title: "Mobile
+            Pendrive - document archiving system based on cloud storages"</p>
+        </section>
+      </section>
+      <section>
+        <div class="grid grid-section-info">
+          <h4>PiastCode 2</h3>
+            <p class="location__Opole">Opole, Polska</p>
+        </div>
+        <div class="grid grid-section-info">
+          <h5>Hackathon</h5>
+          <p>2017.06.09</p>
+        </div>
+        <section>
+          <p class="description PiastCode2__description">Defended master thesis in June 2019. Master thesis title: "Data migration technologies
+            used for the designing and implementation of new advanced web services"</p>
+        </section>
+      </section>
+      <section>
+        <div class="grid grid-section-info">
+          <h4>PiastCode</h3>
+            <p class="location__Opole">Opole, Polska</p>
+        </div>
+        <div class="grid grid-section-info">
+          <h5>Hackathon</h5>
+          <p>2016.05.15</p>
+        </div>
+        <section>
+          <p class="description PiastCode__description">Defended engineering thesis in February 2018. Engineering thesis title: "Mobile
+            Pendrive - document archiving system based on cloud storages"</p>
+        </section>
+      </section>
+      <section>
+        <div class="grid grid-section-info">
+          <h4 class="scholarship">Stypendium</h3>
+            <p class="location__Opole">Opole, Polska</p>
+        </div>
+        <div class="grid grid-section-info">
+          <h5 class="scholarship">Stypendium</h5>
+          <p>2017.10 - 2018.06</p>
+        </div>
+        <section>
+          <p class="description scholarship__description">Defended engineering thesis in February 2018. Engineering thesis title: "Mobile
+            Pendrive - document archiving system based on cloud storages"</p>
+        </section>
+      </section>
+    </section>
+
+  </section>
+  <!-- footer -->
+  <footer>
+    <h2 id="contact" class="title__contact">Kontakt:</h2>
+    <section class="grid grid-main-split">
+      <div class="grid-item-2">
+        <a href="https://www.linkedin.com/in/grzegorz-stysiak/">
+          <img src="./content/linkedin.png" alt="LinkedIn QR code">
+        </a>
+      </div>
+      <div class="grid-item-4">
+        <a href="https://github.com/stysiok">
+          <img src="./content/github.png" alt="Github QR code">
+        </a>
+      </div>
+    </section>
+  </footer>
+
+  <script src="./locales/en_EN.js"></script>
+  <script src="./locales/pl_PL.js"></script>
+  <script src="./scripts/translations.js"></script>
+</body>
+
+</html>
