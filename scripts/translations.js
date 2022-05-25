@@ -1,6 +1,6 @@
 i18next
     .init({
-        lng: 'pl',
+        lng: 'en',
         debug: true,
         resources: {
             en: {
